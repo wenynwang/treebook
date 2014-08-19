@@ -6,9 +6,35 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
 
+
+	<div class="navbar navbar-inverse navbar-fixed-top" >
+		<div class="navbar-inner">
+			<div class="container">
+			 <a href="#" class="navbar-brand" >NTUCC</a>
+			 
+			  <div class="collapse navbar-collapse">
+			 <ul class="nav navbar-nav">
+			 	<li class="active"><%= link_to "All statuses", statuses_path %></li>
+				</ul>
+				 </div>
+		</div>
+	</div>
+</div>
+
+
+
+
+    <div class="container">
+
+
+
+
+<div class="container">
 <%= yield %>
+</div>
 
 </body>
 </html>
